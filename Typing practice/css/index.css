@@ -1,0 +1,336 @@
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  height: 0px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix::after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.key::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.head {
+  width: 100%;
+  height: 140px;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  height: 140px;
+}
+
+.nav {
+  float: right;
+  height: 140px;
+}
+
+.nav a.cur {
+  color: #1c1c1c;
+  background: #ffb802;
+}
+
+.nav a {
+  display: block;
+  margin-top: 47.5px;
+  margin-bottom: 47.5px;
+  float: left;
+  color: #ffb802;
+  background: #1c1c1c;
+  width: 112px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14.4px;
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+.nav a:last-child {
+  margin-right: 0;
+}
+
+.nav a:hover {
+  color: #1c1c1c;
+  background: #ffb802;
+}
+
+.bodybox {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.textbox {
+  border: 5px solid #ffb802;
+  width: 1150px;
+  border-radius: 50px;
+  height: 160px;
+  line-height: 75px;
+  padding: 0 20px;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+}
+
+.case {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 75px;
+  line-height: 32.5px;
+  word-spacing: 30px;
+}
+
+.case::-webkit-scrollbar {
+  width: 2px;
+  height: 1px;
+}
+
+.input {
+  height: 0px;
+}
+
+.input input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 75px;
+  word-spacing: 30px;
+  font-size: 16px;
+}
+
+.output {
+  float: left;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 75px;
+  line-height: 75px;
+  word-spacing: 30px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.keybox {
+  width: 100%;
+  transition: all 0.6s;
+}
+
+.keybox-left {
+  float: left;
+  width: 900px;
+  margin-left: 50px;
+}
+
+.keybox-right {
+  float: left;
+  padding-right: 74px;
+}
+
+.row {
+  height: 47.6px;
+  margin-bottom: 17px;
+  overflow: hidden;
+}
+
+.keybox .key {
+  float: left;
+  width: 52.5px;
+  height: 47.6px;
+  line-height: 47.6px;
+  text-align: center;
+  background: #1c1c1c;
+  color: #ffb802;
+  margin: 0 3px;
+  border-radius: 18.2px;
+}
+
+.keybox #backspace {
+  width: 112px;
+}
+
+.keybox #slash,
+.keybox #tab {
+  width: 80.5px;
+}
+
+#caps {
+  width: 99.4px;
+}
+
+#enter {
+  width: 124.6px;
+}
+
+#shift-l {
+  width: 130.9px;
+}
+
+#shift-r {
+  width: 155.4px;
+}
+
+#space {
+  width: 458.7px;
+}
+
+.keybox-left .row:last-child {
+  margin-bottom: 0;
+}
+
+.key img {
+  line-height: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.keybox-right .row-3 {
+  text-align: left;
+}
+
+.keybox-right .row img {
+  padding-left: 25px;
+  padding-top: 13px;
+}
+
+.keybox-right .row-4 .key {
+  margin-left: 60px;
+}
+
+.keybox-right .row-4 .key .arrow,
+.keybox-right .row-5 .key .arrow {
+  padding: 0;
+}
+
+.arrow-l {
+  transform: rotate(-90deg);
+}
+
+.arrow-d {
+  transform: rotate(180deg);
+}
+
+.arrow-r {
+  transform: rotate(90deg);
+}
+
+.info {
+  margin-top: 20px;
+  width: 900px;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.info-item {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 15px;
+  vertical-align: middle;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.info-item img {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.info-item .txt {
+  float: right;
+}
+
+.txt > span {
+  display: inline-block;
+  width: 65px;
+}
+
+.progress img {
+  margin-top: 10px;
+}
+
+.textbox .jsword {
+  width: 100%;
+  height: 75px;
+  line-height: 32.5px;
+  word-spacing: 30px;
+}
+
+.textbox .jscode {
+  width: 48%;
+  height: 490px;
+  float: left;
+  line-height: 80px;
+}
+
+.textbox .cssword {
+  width: 100%;
+  height: 75px;
+  line-height: 32.5px;
+  word-spacing: 30px;
+}
+
+.textbox .csscode {
+  width: 48%;
+  height: 490px;
+  float: left;
+  line-height: 30px;
+  word-spacing: normal;
+}
+
+.textbox .htmlword {
+  width: 100%;
+  height: 75px;
+  line-height: 32.5px;
+  word-spacing: 30px;
+}
+
+.textbox .htmlcode {
+  width: 48%;
+  height: 490px;
+  float: left;
+  line-height: 60px;
+  word-spacing: normal;
+}

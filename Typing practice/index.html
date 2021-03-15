@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webcoder</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="head clearfix">
+      <div class="logo"><img src="images/logo.png" alt=""></div>
+      <div class="wrap clearfix">
+        <div class="nav">
+          <a href="javascript:;">html单词</a>
+          <a href="javascript:;">css单词</a>
+          <a href="javascript:;" class="cur">js单词</a>
+          <a href="javascript:;">html实战</a>
+          <a href="javascript:;">css实战</a>
+          <a href="javascript:;">js实战</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="bodybox">
+    <div class="wrap">
+      <div class="textbox">
+        <div class="case"></div>
+        <div class="input">
+          <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+          <input class="shuru" autofocus type="text" placeholder="输入框"/>
+        </div>
+        <pre class="output"></pre>
+      </div>
+      <div class="keybox clearfix">
+        <div class="keybox-left clearfix">
+          <div class="row-1 row">
+            <div class="key">` ~</div>
+            <div class="key">1 !</div>
+            <div class="key">2 @</div>
+            <div class="key">3 #</div>
+            <div class="key">4 $</div>
+            <div class="key">5 %</div>
+            <div class="key">6 ^</div>
+            <div class="key">7 &</div>
+            <div class="key">8 *</div>
+            <div class="key">9 (</div>
+            <div class="key">0 )</div>
+            <div class="key">- _</div>
+            <div class="key">= +</div>
+            <div class="key" id="backspace"><img src="./images/backspace.png" alt=""></div>
+          </div>
+          <div class="row-2 row">
+            <div class="key" id="tab">Tab</div>
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+            <div class="key">[{</div>
+            <div class="key">]}</div>
+            <div class="key" id="slash">\|</div>
+          </div>
+          <div class="row-3 row">
+            <div class="key" id="caps">Caps</div>
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+            <div class="key">;:</div>
+            <div class="key">'"</div>
+            <div class="key" id="enter">Enter</div>
+          </div>
+          <div class="row-4 row">
+            <div class="key" id="shift-l">Shift</div>
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+            <div class="key">, &lt;</div>
+            <div class="key">, &gt;</div>
+            <div class="key">/ ?</div>
+            <div class="key" id="shift-r">Shift</div>
+          </div>
+          <div class="row-5 row">
+            <div class="key">Ctrl</div>
+            <div class="key"><img src="./images/windows.png" alt=""></div>
+            <div class="key">Alt</div>
+            <div class="key" id="space">space</div>
+            <div class="key">Alt</div>
+            <div class="key">Fn</div>
+            <div class="key"><img src="./images/menu.png" alt=""></div>
+            <div class="key">Ctrl</div>
+          </div>
+        </div>
+        <div class="keybox-right clearfix">
+          <div class="row-1 row">
+            <div class="key">Ins</div>
+            <div class="key">Home</div>
+            <div class="key">PgUp</div>
+          </div>
+          <div class="row-2 row">
+            <div class="key">Del</div>
+            <div class="key">End</div>
+            <div class="key">PgDn</div>
+          </div>
+          <div class="row-3 row">
+            <img src="images/wanxiLogo.png" alt="">
+          </div>
+          <div class="row-4 row">
+            <div class="key"><img class="arrow" src="./images/upArrow.png" alt=""></div>
+          </div>
+          <div class="row-5 row">
+            <div class="key"><img class="arrow arrow-l" src="./images/upArrow.png" alt=""></div>
+            <div class="key"><img class="arrow arrow-d" src="./images/upArrow.png" alt=""></div>
+            <div class="key"><img class="arrow arrow-r" src="./images/upArrow.png" alt=""></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="info clearfix">
+        <div class="time info-item">
+          <img src="./images/time.png">
+          <div class="txt">时间<span>00:00:00</span></div>
+        </div>
+        <div class="speed info-item">
+          <img src="./images/speed.png" alt="">
+          <div class="txt">速度<span>0</span>字/分</div>
+        </div>
+        <div class="progress info-item">
+          <img src="./images/battery.png" alt="">
+          <div class="txt">时间进度<span>0%</span></div>
+        </div>
+        <div class="acurate info-item">
+          <img src="./images/progress.png" alt="">
+          <div class="txt">正确率<span>100%</span></div>
+        </div>
+        <div class="reset info-item">
+          <img src="./images/reset.png" alt="">
+        </div>
+        <div class="pause info-item">
+          <img src="./images/pause.png" alt="">   
+        </div>
+        <div class="stop info-item">
+          <img src="./images/stop.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
